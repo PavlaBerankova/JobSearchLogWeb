@@ -1,0 +1,21 @@
+:root {
+    --color-page-background: 105, 99, 122;
+    --color-app-background: 43, 39, 56;
+    --color-text-gray: 109, 104, 124;
+    --color-purple: 110, 85, 181;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background-color: rgb(var(--color-page-background));
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 16px;
+    font-family: "Work Sans", sans-serif;
+}
