@@ -29,9 +29,7 @@
 
 .auth-view .sign-up-button {
     background-color: rgb(var(--color-purple));
-    /* margin-top: 1.25rem; */
     color: white;
-   /* padding: 0.5rem 10rem; */
     border-radius: var(--button-border-radius);
     border: 0;
 
@@ -81,7 +79,7 @@
     font-size: 14px;
 }
 
-.google-apple-login {
+.social-login {
     background-color: var(--color-app-background);
     color: white; 
     display: grid;
