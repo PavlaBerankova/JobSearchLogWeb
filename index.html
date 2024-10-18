@@ -17,9 +17,12 @@
   </head>
   <body>
     <div class="auth-view">
-      <h1>Vytvořit účet.</h1>
+      <main class="main">
+        <header>
+          <h1>Vytvořit účet</h1>
+        </header>
       <p>Máš už svůj účet? <a href="./login.html">Přihlásit se</a></p>
-      <form action="" class="sign-up">
+      <form action="" class="sign-up-form">
         <label for="nickname"></label>
         <input type="text" placeholder="Nickname" name="nickname" /><br />
 
@@ -28,13 +31,34 @@
 
         <label for="password"></label>
         <input type="text" placeholder="Heslo" name="password" /><br />
-
-        <button class="sign-up-button">Vytvořit účet</button>
-
-        <p>Zaregistrovat se pomocí jiného účtu</p>
-        <button class="google-button">Google</button>
-        <button class="apple-button">Appple</button>
       </form>
+      <div class="create-account-button">
+        <button class="sign-up-button">Vytvořit účet</button>
+      </div>
+   
+      <p class="divider"><span>Přihlásit se pomocí účtu</span></p>
+      <div class="google-apple-login">
+        <button class="google-button">
+          <img
+            src="./images/google-logo.svg"
+            alt="Google logo"
+            class="icon"
+          /><span>Google</span>
+        </button>
+        <button class="apple-button">
+          <img
+            src="./images/apple-black-logo.svg"
+            alt="Apple logo"
+            class="icon"
+          />
+          <span>Apple</span>
+        </button>
+      </main>
+      <aside class="app-info">
+        <h2>Job Search Log</h2>
+      </aside>
+
+      </div>
     </div>
   </body>
 </html>

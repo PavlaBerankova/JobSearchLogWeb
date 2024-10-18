@@ -3,6 +3,10 @@
     --color-app-background: 43, 39, 56;
     --color-text-gray: 109, 104, 124;
     --color-purple: 110, 85, 181;
+    --color-form-background: 60, 54, 77;
+
+    --button-border-radius: 0.4rem;
+    --button-padding: 0.75rem 10vh;
 }
 
 html {
@@ -18,4 +22,20 @@ body {
 
     font-size: 16px;
     font-family: "Work Sans", sans-serif;
+}
+
+a {
+    color: #8265e3; /* Normální barva odkazu */
+}
+
+a:hover {
+    color: #5a45c4; /* Barva při hoveru */
+}
+
+a:visited {
+    color: #9c6de3; /* Barva navštíveného odkazu */
+}
+
+a:active {
+    color: #d465e3; /* Barva při aktivaci (při kliknutí) */
 }

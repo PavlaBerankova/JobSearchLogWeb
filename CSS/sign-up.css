@@ -1,6 +1,6 @@
 .auth-view {
-    width: 52rem;
-    height: 36rem;
+    width: 60rem;
+    height: 50rem;
 
     border-radius: 0.60rem;
     background-color: rgb(var(--color-app-background));
@@ -9,7 +9,12 @@
     box-shadow: 0 0 60px rgba(var(--color-app-background), 0.7);
 
     color: rgb(var(--color-text-gray));
-    padding-left: 2.5rem;
+    padding: 4rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    margin: 2rem;
 }
 
 .auth-view h1 {
@@ -18,11 +23,87 @@
     font-size: 2.5rem;
 }
 
+.main {
+    padding: 2rem;
+}
+
 .auth-view .sign-up-button {
     background-color: rgb(var(--color-purple));
-    margin-top: 1.25rem;
+    /* margin-top: 1.25rem; */
     color: white;
-    padding: 0.75rem 10vh;
-    border-radius: 0.4rem;
+   /* padding: 0.5rem 10rem; */
+    border-radius: var(--button-border-radius);
     border: 0;
+
+    width: 100%; /* Zabírá celou šířku rodiče */
+    padding: 0.75rem; /* Nastav rozumnou výšku tlačítka */
+    box-sizing: border-box; /* Aby padding a border neovlivňovaly šířku */
 }
+
+.sign-up-form * {
+    margin-bottom: 0.75rem;
+    padding: 0.75rem 0rem 0.75rem;
+    border-radius: var(--button-border-radius);
+    border: 0;
+
+
+
+
+
+
+
+    background-color: rgb(60, 57, 77);
+}
+
+.sign-up-form input {
+    display: block;
+    width: 100%;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 1.25rem 0;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 0.10rem solid;
+    margin: 1.25rem 1rem;
+}
+
+.divider span {
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.google-apple-login {
+    background-color: var(--color-app-background);
+    color: white; 
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dva sloupce stejné šířky */
+    gap: 1rem; /* Mezera mezi tlačítky */
+}
+
+.icon {
+    width: 1rem;
+    padding-right: 0.4rem;
+}
+
+.google-button,
+.apple-button {
+    background-color: var(--color-app-background);
+    color: white;
+    border-radius: var(--button-border-radius);
+    border: 0.12rem solid rgb(var(--color-text-gray));
+    width: 100%; /* Každé tlačítko zabere celý sloupec */
+    padding: 0.75rem; /* Nastav rozumnou výšku tlačítek */
+    box-sizing: border-box; /* Aby padding neovlivňoval šířku */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Zarovnání obsahu na střed */
+}
+
