@@ -1,6 +1,6 @@
 .auth-view {
     width: 60rem;
-    height: 50rem;
+    height: 40rem;
 
     border-radius: 0.60rem;
     background-color: rgb(var(--color-app-background));
@@ -36,8 +36,16 @@
     border: 0;
 
     width: 100%; /* Zabírá celou šířku rodiče */
-    padding: 0.75rem; /* Nastav rozumnou výšku tlačítka */
+    padding: 0.75rem; /* výška tlačítka */
     box-sizing: border-box; /* Aby padding a border neovlivňovaly šířku */
+}
+
+.sign-up-button:hover {
+    background-color: #5a45c4; /* Barva při hoveru */
+}
+
+.sign-up-button:active {
+    background-color: #9c6de3; /* Barva při aktivaci (při kliknutí) */
 }
 
 .sign-up-form * {
@@ -45,13 +53,6 @@
     padding: 0.75rem 0rem 0.75rem;
     border-radius: var(--button-border-radius);
     border: 0;
-
-
-
-
-
-
-
     background-color: rgb(60, 57, 77);
 }
 
@@ -88,6 +89,16 @@
     gap: 1rem; /* Mezera mezi tlačítky */
 }
 
+.google-button:hover,
+.google-button:active {
+    background-color: #3f3b57;
+}
+
+.apple-button:hover,
+.apple-button:active {
+    background-color: #3f3b57;
+}
+
 .icon {
     width: 1rem;
     padding-right: 0.4rem;
@@ -105,5 +116,38 @@
     display: flex;
     align-items: center;
     justify-content: center; /* Zarovnání obsahu na střed */
+}
+
+.app-info {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 2.5rem;
+    position: relative;
+}
+
+.app-info h2 {
+    margin-bottom: 3.8rem;
+}
+
+.app-info img {
+    width: 10rem;
+}
+
+.app-info .app-logo {
+    position: absolute; /* Použijeme absolutní pozicování */
+    bottom: 0; /* Umístíme obrázek na dolní okraj */
+    right: 0; /* Umístíme obrázek k pravému okraji */
+    width: 4rem; /* Nastavíme rozumnou velikost obrázku */
+    height: auto;
+    margin: 1rem; /* Přidáme mezeru od okrajů */
+}
+
+.dot {
+    color: rgb(var(--color-purple));
+    margin-left: 0.5rem;
 }
 
