@@ -1,6 +1,6 @@
 .auth-view {
-    width: 60rem;
-    height: 40rem;
+    width: 55rem;
+    height: 37rem;
 
     border-radius: 0.60rem;
     background-color: rgb(var(--color-app-background));
@@ -9,7 +9,7 @@
     box-shadow: 0 0 60px rgba(var(--color-app-background), 0.7);
 
     color: rgb(var(--color-text-gray));
-    padding: 4rem;
+    padding: 2rem;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
