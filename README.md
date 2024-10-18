@@ -1,0 +1,1 @@
+https://jobsearchlog.netlify.app/
