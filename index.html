@@ -21,21 +21,21 @@
       <p>Máš už svůj účet? <a href="./login.html">Přihlásit se</a></p>
 
       <form action="" class="sign-up-form">
-        <label for="nickname"></label>
-        <input type="text" placeholder="Nickname" name="nickname" /><br />
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="Email" name="email" required minlength="6"  /><br />
 
-        <label for="email"></label>
-        <input type="text" placeholder="Email" name="email" /><br />
+        <label for="password">Heslo</label>
+        <input id="password" type="password" placeholder="Heslo" name="password" required minlength="6"  /><br />
 
-        <label for="password"></label>
-        <input type="text" placeholder="Heslo" name="password" /><br />
+        <label for="password-again">Heslo znovu</label>
+        <input id="password-again" type="password" placeholder="Heslo znovu" name="password" required minlength="6"  /><br />
       </form>
 
       <div class="create-account-button">
-        <button class="sign-up-button">Vytvořit účet</button>
+        <button class="sign-up-button" type="submit">Vytvořit účet</button>
       </div>
    
-      <p class="divider"><span>Přihlásit se pomocí účtu</span></p>
+      <p class="divider"><span>NEBO</span></p>
 
       <div class="social-login">
         <button class="google-button">
@@ -48,7 +48,7 @@
         </button>
         <button class="apple-button">
           <img
-            src="./images/apple-black-logo.svg"
+            src="./images/apple-white-logo.png"
             alt="Apple logo"
             class="icon"
           />
@@ -57,9 +57,10 @@
       </main>
       
       <aside class="app-info">
-        <h2>Job <br>
-           Search <br> 
-           Log<span class="dot">.</span> <br>
+        <h2>
+          <span class="purple-color-text">Job</span> <br>
+          Search<br> 
+          Log<span class="dot">.</span> <br>
           </h2>
           <img src="./images/app-logo.png" alt="Job Search Log app logo" class="app-logo">
       </aside>
