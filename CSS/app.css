@@ -46,3 +46,7 @@ a:active {
     color: #d465e3; /* Barva při aktivaci (při kliknutí) */
 }
 
+button {
+    transition: background-color 0.2s ease;
+}
+
