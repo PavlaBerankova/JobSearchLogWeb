@@ -1,8 +1,14 @@
 :root {
-    --color-page-background: 105, 99, 122;
-    --color-app-background: 43, 39, 56;
+    --color-page-background: 39, 28, 83;  /* 105, 99, 122 */
+    --color-app-background: 12, 18, 36;   /* 43, 39, 56 */
     --color-text-gray: 109, 104, 124;
-    --color-purple: 110, 85, 181;
+    --color-white-low: 250, 250, 250;
+
+    --color-purple: 109, 52, 224; /* 135, 87, 231 */
+    --color-purple-hover: 96, 35, 222;
+
+    --color-link: 135, 87, 230;
+
     --color-form-background: 60, 54, 77;
 
     --button-border-radius: 0.4rem;
@@ -10,7 +16,7 @@
 }
 
 html {
-    font-size: 100%;
+    font-size: 1rem;
 }
 
 body {
@@ -20,16 +26,16 @@ body {
     justify-content: center;
     align-items: center;
 
-    font-size: 16px;
+    font-size: 1rem;
     font-family: "Work Sans", sans-serif;
 }
 
 a {
-    color: #8265e3; /* Normální barva odkazu */
+    color: rgb(var(--color-link)); /* Normální barva odkazu */
 }
 
 a:hover {
-    color: #5a45c4; /* Barva při hoveru */
+    color: rgb(var(--color-purple)); /* Barva při hoveru */
 }
 
 a:visited {
