@@ -1,6 +1,5 @@
 .auth-view {
-    width: 55rem;
-    height: 42rem;
+    width: 35rem;
 
     border-radius: 0.60rem;
     background-color: rgb(var(--color-app-background));
@@ -11,18 +10,14 @@
     color: rgb(var(--color-text-black));
     padding: 2rem;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flexbox;
+    flex-direction: column;
 }
 
 .auth-view h1 {
     font-weight: 700;
     font-size: 2.5rem;
     padding-bottom: 1rem;
-}
-
-.main {
-    padding: 2rem;
 }
 
 .auth-view .sign-up-button {
@@ -153,35 +148,22 @@
     color: rgb(var(--color-purple));
 }
 
+.app-info img {
+    width: 7rem;
+    margin-bottom: 0;
+    margin-top: 1rem;
+}
+
 .app-info {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-weight: 500;
-    font-size: 2.5rem;
-    position: relative;
+    flex-direction: row;
+    align-items: flex-start;
+    align-self: flex-start;
 }
 
 .app-info h2 {
-    margin-bottom: 3.8rem;
-}
-
-.app-info img {
-    width: 10rem;
-}
-
-.app-info .app-logo {
-    position: absolute; /* Použijeme absolutní pozicování */
-    bottom: 0; /* Umístíme obrázek na dolní okraj */
-    right: 0; /* Umístíme obrázek k pravému okraji */
-    width: 4rem; /* Nastavíme velikost obrázku */
-    height: auto;
-    margin: 1rem; /* Přidáme mezeru od okrajů */
-}
-
-.dot {
-    color: rgb(var(--color-purple));
-    margin-left: 0.5rem;
+    font-size: 1.75rem;
+    font-weight: 700;
+    
 }
 
