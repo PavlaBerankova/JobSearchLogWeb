@@ -43,7 +43,7 @@
 }
 
 .sign-up-button:active {
-    background-color: rgb(var(--color-purple)); /* Barva při aktivaci (při kliknutí) */
+    background-color: rgb(var(--color-purple-hover)); /* Barva při aktivaci (při kliknutí) */
 }
 
 .sign-up-form {
@@ -56,6 +56,10 @@
 
 .sign-up-form * {
     padding: 0.75rem 0rem 0.75rem;
+}
+
+.asterix {
+    color: red;
 }
 
 .sign-up-form input {
@@ -101,7 +105,7 @@
 }
 
 .social-login {
-    background-color: var(--color-app-background);
+    background-color: var(--color-purple-dark);
     color: rgb(var(--color-text-black));
     display: grid;
     grid-template-columns: 1fr 1fr; /* Dva sloupce stejné šířky */
@@ -109,19 +113,19 @@
 }
 
 .google-button:hover {
-    background-color: rgb(31, 30, 63);
+    background-color: rgb(var(--color-purple));
 }
 
 .google-button:active {
-    background-color: rgb(var(--color-app-background));
+    background-color: rgb(var(--color-purple));
 }
 
 .apple-button:hover {
-    background-color: rgb(31, 30, 63);
+    background-color: rgb(var(--color-purple));
 }
 
 .apple-button:active {
-    background-color: rgb(var(--color-app-background));
+    background-color: rgb(var(--color-purple));
 }
 
 
@@ -133,6 +137,7 @@
 .google-button,
 .apple-button {
     color: white;
+    border: 0;
     background-color: rgb(var(--color-purple-dark));
     border-radius: var(--button-border-radius);
     width: 100%; /* Každé tlačítko zabere celý sloupec */
