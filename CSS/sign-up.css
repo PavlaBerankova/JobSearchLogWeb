@@ -8,7 +8,7 @@
 
     box-shadow: 0 0 1rem rgba(var(--color-app-background), 0.7);
 
-    color: rgb(var(--color-white-low));
+    color: rgb(var(--color-text-black));
     padding: 2rem;
 
     display: grid;
@@ -16,7 +16,6 @@
 }
 
 .auth-view h1 {
-    color: rgb(var(--color-white-low));
     font-weight: 700;
     font-size: 2.5rem;
     padding-bottom: 1rem;
@@ -64,7 +63,7 @@
     width: 100%;
     border-radius: var(--button-border-radius);
     border: 0.1rem;
-    border-color: rgba(255, 255, 255, 0.384);
+    border-color: rgba(0, 0, 0, 0.132);
     border-style: solid;
     background-color: rgba(var(--color-white-low));
     text-indent: 0.55rem;
@@ -78,7 +77,6 @@
 }
 
 .sign-up-form label {
-    color: rgb(var(--color-white-low));
     margin-left: 0.55rem;
 }
 
@@ -104,7 +102,7 @@
 
 .social-login {
     background-color: var(--color-app-background);
-    color: rgb(var(--color-white-low));
+    color: rgb(var(--color-text-black));
     display: grid;
     grid-template-columns: 1fr 1fr; /* Dva sloupce stejné šířky */
     gap: 1rem; /* Mezera mezi tlačítky */
@@ -134,10 +132,9 @@
 
 .google-button,
 .apple-button {
-    background-color: var(--color-app-background);
-    color: rgb(var(--color-white-low));
+    color: white;
+    background-color: rgb(var(--color-purple-dark));
     border-radius: var(--button-border-radius);
-    border: 0.1rem solid white;
     width: 100%; /* Každé tlačítko zabere celý sloupec */
     padding: 0.75rem; /* Výška tlačítek */
     box-sizing: border-box; /* Aby padding neovlivňoval šířku */
@@ -152,7 +149,6 @@
 }
 
 .app-info {
-    color: rgb(var(--color-white-low));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -174,7 +170,7 @@
     position: absolute; /* Použijeme absolutní pozicování */
     bottom: 0; /* Umístíme obrázek na dolní okraj */
     right: 0; /* Umístíme obrázek k pravému okraji */
-    width: 4rem; /* Nastavíme rozumnou velikost obrázku */
+    width: 4rem; /* Nastavíme velikost obrázku */
     height: auto;
     margin: 1rem; /* Přidáme mezeru od okrajů */
 }
