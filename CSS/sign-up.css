@@ -1,3 +1,4 @@
+/* FORM */
 .auth-view {
     width: 35rem;
 
@@ -17,28 +18,6 @@
 .auth-view h1 {
     font-weight: 700;
     font-size: 2.5rem;
-    padding-bottom: 1rem;
-}
-
-.auth-view .sign-up-button {
-    background-color: rgb(var(--color-purple));
-    color: rgb(var(--color-white-low));
-    border-radius: var(--button-border-radius);
-    border: 0;
-
-    transition: background-color 0.3s ease;
-
-    width: 100%; /* Zabírá celou šířku rodiče */
-    padding: 0.75rem; /* výška tlačítka */
-    box-sizing: border-box; /* Aby padding a border neovlivňovaly šířku */
-}
-
-.sign-up-button:hover {
-    background-color: rgb(var(--color-purple-hover)); /* #5a45c4; Barva při hoveru */
-}
-
-.sign-up-button:active {
-    background-color: rgb(var(--color-purple-hover)); /* Barva při aktivaci (při kliknutí) */
 }
 
 .sign-up-form {
@@ -68,7 +47,7 @@
     text-indent: 0.55rem;
 
     margin-top: 0.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .sign-up-form input:focus {
@@ -79,19 +58,43 @@
     margin-left: 0.55rem;
 }
 
+
+/* SIGN UP BUTTON */
+.auth-view .sign-up-button {
+    background-color: rgb(var(--color-purple));
+    color: rgb(var(--color-white-low));
+    border-radius: var(--button-border-radius);
+    border: 0;
+
+    transition: background-color 0.3s ease;
+
+    width: 100%; /* Zabírá celou šířku rodiče */
+    padding: 0.75rem; /* výška tlačítka */
+    box-sizing: border-box; /* Aby padding a border neovlivňovaly šířku */
+    margin-top: 0.75rem;
+}
+
+.sign-up-button:hover {
+    background-color: rgb(var(--color-purple-hover)); /* #5a45c4; Barva při hoveru */
+}
+
+.sign-up-button:active {
+    background-color: rgb(var(--color-purple-hover)); /* Barva při aktivaci (při kliknutí) */
+}
+
+
+/* DIVIDER OR */
 .divider {
     display: flex;
     align-items: center;
     text-align: center;
-    margin: 1.25rem 0;
 }
 
 .divider::before,
 .divider::after {
     content: '';
     flex: 1;
-    border-bottom: 0.10rem solid;
-    margin: 1.25rem 1rem;
+    border-bottom: 0.10rem solid rgb(181, 181, 181);
 }
 
 .divider span {
@@ -99,12 +102,17 @@
     font-size: 1rem;
 }
 
+.or-text {
+    color: gray;
+    margin: 0.75rem 1.25rem;
+}
+
+
+/* SOCIAL LOGIN BUTTON */
+
 .social-login {
     background-color: var(--color-purple-dark);
     color: rgb(var(--color-text-black));
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Dva sloupce stejné šířky */
-    gap: 1rem; /* Mezera mezi tlačítky */
 }
 
 .google-button:hover {
@@ -123,7 +131,6 @@
     background-color: rgb(var(--color-purple));
 }
 
-
 .icon {
     width: 1rem;
     padding-right: 0.4rem;
@@ -141,10 +148,13 @@
     display: flex;
     align-items: center;
     justify-content: center; /* Zarovnání obsahu na střed */
+    margin-bottom: 1.25rem;
 }
 
-/* Right side - App logo */ 
-.purple-color-text {
+
+
+
+/* .purple-color-text {
     color: rgb(var(--color-purple));
 }
 
@@ -165,5 +175,5 @@
     font-size: 1.75rem;
     font-weight: 700;
     
-}
+} */
 
