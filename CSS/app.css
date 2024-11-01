@@ -24,14 +24,25 @@ html {
 }
 
 body {
-    background-color: rgb(var(--color-page-background));
+    background-color: rgb(var(--color-app-background));
     min-height: 100vh;
+    max-width: 1280px;
+    font-size: 0.85rem;
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.app {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
 
-    font-size: 1rem;
-    font-family: "Work Sans", sans-serif;
+.nav-bar {
+    background-color: #9c6de3;
+    width: 50vh;
 }
 
 a {
@@ -52,5 +63,57 @@ a:active {
 
 button {
     transition: background-color 0.2s ease;
+}
+
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1280px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    height: 2em;
+    padding: 1.25rem 1rem 1rem 0.25rem;
+    margin: 0em 1em 1em 1em;
+}
+
+.navbar-container img {
+    width: 3.5rem;
+    
+}
+
+.navbar-app-logo {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: large;
+    margin: 0.25rem;
+    padding: 0.5rem;
+}
+
+.purple-text {
+    color: rgb(var(--color-purple));
+}
+
+.purple-dot {
+    color: rgb(var(--color-purple));
+    font-size: 1.25rem;
+}
+
+.navbar-app-logo p {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 1.25rem;
+}
+
+.navbar-menu {
+    margin: 0.25rem;
+    padding: 0.5rem;
+}
+
+.navbar-menu-right img {
+    width: 1.75rem;
 }
 

@@ -1,7 +1,5 @@
 /* FORM */
 .auth-view {
-    width: 35rem;
-
     border-radius: 0.60rem;
     background-color: rgb(var(--color-app-background));
     overflow: hidden;
@@ -13,10 +11,12 @@
 
     display: flexbox;
     flex-direction: column;
+    width: 85%;
+    
 }
 
 .auth-view h1 {
-    font-weight: 700;
+    font-weight: 500;
     font-size: 2.5rem;
 }
 
