@@ -1,27 +1,21 @@
+
+
 /* FORM */
-.auth-view {
-    border-radius: 0.60rem;
-    background-color: rgb(var(--color-app-background));
-    overflow: hidden;
-
-    box-shadow: 0 0 1rem rgba(var(--color-app-background), 0.7);
-
+.auth-container {
     color: rgb(var(--color-text-black));
-    padding: 2rem;
-
     display: flexbox;
     flex-direction: column;
-    width: 85%;
-    
+    margin-top: 5rem;
 }
 
-.auth-view h1 {
+.auth-container h1 {
     font-weight: 500;
     font-size: 2.5rem;
 }
 
 .sign-up-form {
     margin-top: 2rem;
+
 }
 
 .sign-up-form input::placeholder {
@@ -60,7 +54,7 @@
 
 
 /* SIGN UP BUTTON */
-.auth-view .sign-up-button {
+.auth-container .sign-up-button {
     background-color: rgb(var(--color-purple));
     color: rgb(var(--color-white-low));
     border-radius: var(--button-border-radius);
