@@ -26,22 +26,24 @@ html {
 body {
     background-color: rgb(var(--color-app-background));
     min-height: 100vh;
-    max-width: 1280px;
     font-size: 0.85rem;
     font-family: "Lexend", sans-serif;
     font-weight: 300;
     font-style: normal;
 }
 
+.auth-container .content {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
 .app {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 .nav-bar {
-    background-color: #9c6de3;
     width: 50vh;
 }
 
@@ -68,18 +70,18 @@ button {
 .navbar-container {
     display: flex;
     flex-direction: row;
-    max-width: 1280px;
+
     width: 100%;
     align-items: center;
     justify-content: space-between;
     background-color: #ffffff;
-    height: 2em;
+    height: 3em;
     padding: 1.25rem 1rem 1rem 0.25rem;
-    margin: 0em 1em 1em 1em;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
 }
 
 .navbar-container img {
-    width: 3.5rem;
+    width: 4rem;
     
 }
 
@@ -87,9 +89,17 @@ button {
     display: flex;
     align-items: center;
     font-weight: 600;
-    font-size: large;
     margin: 0.25rem;
     padding: 0.5rem;
+    padding-left: 10rem;
+
+    p {
+        font-size: 1.5rem;
+        font-family: "Tomorrow", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        margin-bottom: 1.25rem;
+    }
 }
 
 .purple-text {
@@ -101,16 +111,10 @@ button {
     font-size: 1.25rem;
 }
 
-.navbar-app-logo p {
-    font-family: "Tomorrow", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    margin-bottom: 1.25rem;
-}
-
 .navbar-menu {
     margin: 0.25rem;
     padding: 0.5rem;
+    padding-right: 10rem;
 }
 
 .navbar-menu-right img {
