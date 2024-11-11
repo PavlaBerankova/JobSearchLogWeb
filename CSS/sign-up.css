@@ -145,29 +145,11 @@
     margin-bottom: 1.25rem;
 }
 
-
-
-
-/* .purple-color-text {
-    color: rgb(var(--color-purple));
-}
-
-.app-info img {
-    width: 7rem;
-    margin-bottom: 0;
-    margin-top: 1rem;
-}
-
-.app-info {
+/* RESPONSIVITY */
+@media screen and (min-width: 600px) {
+  .social-login {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    align-self: flex-start;
+    gap: 1.25rem;
+  }
 }
-
-.app-info h2 {
-    font-size: 1.75rem;
-    font-weight: 700;
-    
-} */
 
